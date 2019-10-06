@@ -31,7 +31,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qlq-VV-qn3"/>
-                                    <segue destination="zLq-hq-GOW" kind="show" id="stf-af-TEY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-wf-yJm" userLabel="Recording Label">
@@ -57,16 +56,17 @@
                         <outlet property="recordButton" destination="VYx-gv-Cqu" id="WgB-ZN-CxT"/>
                         <outlet property="recordingLabel" destination="UlE-wf-yJm" id="9eX-Xl-inU"/>
                         <outlet property="stopRecordingButton" destination="gyi-La-ikP" id="0an-3D-8Fh"/>
+                        <segue destination="zLq-hq-GOW" kind="show" identifier="stopRecording" id="oRS-Kf-n0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="zOj-Jf-Taw">
             <objects>
-                <viewController id="zLq-hq-GOW" sceneMemberID="viewController">
+                <viewController id="zLq-hq-GOW" customClass="PlaySoundsViewController" customModule="PitchPerfectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tot-3x-hnk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
