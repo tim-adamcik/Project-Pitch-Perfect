@@ -22,10 +22,6 @@ class RecordSoundsViewController: UIViewController {
         stopRecordingButton.isEnabled = false
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-         super.viewWillAppear(animated)
-         print("viewWillAppear Called")
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let playSoundsVC = segue.destination as! PlaySoundsViewController
